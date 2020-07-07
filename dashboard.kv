@@ -1,0 +1,278 @@
+# Filename: Dashboard.kv
+# <GridLayout>
+#     canvas.before:
+#         Color:
+#             rgba: 1, 1, 1, 1
+#         Rectangle:
+#             pos: self.pos
+#             size: self.size
+<Label>:
+    font_size:'20sp'
+#     color: 0,0,0,1
+#
+# <Button>:
+#     color: 1,1,1,1
+#     background_color: 0,0,0,1
+
+<InputPage2>:
+    cols: 1
+    Label:
+        text: 'Daily Attendence Status'
+        size_hint_y: 0.2
+    GridLayout:
+        cols: 2
+        GridLayout:
+            cols: 1
+            size_hint_x: 0.4
+            Label:
+                text: ''
+            Label:
+                text: 'Staff'
+            Label:
+                text: 'Male Worker'
+            Label:
+                text: 'Female Worker'
+            Label:
+                text: 'Total Worker'
+            Label:
+                text: 'Cleaner'
+            Label:
+                text: 'Lodder'
+            Label:
+                text: 'Daily Labour (Out side)'
+            Label:
+                text: 'Project worker (Vendor)'
+            Label:
+                text: 'Visitor'
+
+        GridLayout:
+            cols:4
+            Label:
+                text: 'A-Shift'
+            Label:
+                text: 'G-Shift'
+            Label:
+                text: 'B-Shift'
+            Label:
+                text: 'Absent'
+            TextInput:
+                id: att_1
+            TextInput:
+                id: att_2
+            TextInput:
+                id: att_3
+            TextInput:
+                id: att_4
+            TextInput:
+                id: att_5
+            TextInput:
+                id: att_6
+            TextInput:
+                id: att_7
+            TextInput:
+                id: att_8
+            TextInput:
+                id: att_9
+            TextInput:
+                id: att_10
+            TextInput:
+                id: att_11
+            TextInput:
+                id: att_12
+            TextInput:
+                id: att_13
+            TextInput:
+                id: att_14
+            TextInput:
+                id: att_15
+            TextInput:
+                id: att_16
+            TextInput:
+                id: att_17
+            TextInput:
+                id: att_18
+            TextInput:
+                id: att_19
+            TextInput:
+                id: att_20
+            TextInput:
+                id: att_21
+            TextInput:
+                id: att_22
+            TextInput:
+                id: att_23
+            TextInput:
+                id: att_24
+            TextInput:
+                id: att_25
+            TextInput:
+                id: att_26
+            TextInput:
+                id: att_27
+            TextInput:
+                id: att_28
+            TextInput:
+                id: att_29
+            TextInput:
+                id: att_30
+            TextInput:
+                id: att_31
+            TextInput:
+                id: att_32
+            TextInput:
+                id: att_33
+            TextInput:
+                id: att_34
+            TextInput:
+                id: att_35
+            TextInput:
+                id: att_36
+    GridLayout:
+        cols: 2
+        size_hint_y: 0.13
+        Label:
+            text:'Do You have Visitor'
+        CheckBox:
+            text: 'Yes'
+            on_active: root.checkbox_click(self, self.active)
+
+    Button:
+        text: 'Next'
+        size_hint_y: 0.13
+        on_press: root.save_to_file()
+
+<InfoPage2>:
+    cols: 1
+    Button:
+        text: 'Daily Attendence Status'
+        size_hint_y: 0.2
+    GridLayout:
+        cols: 2
+        GridLayout:
+            cols: 1
+            size_hint_x: 0.4
+            Button:
+                text: ''
+            Button:
+                text: 'Staff'
+            Button:
+                text: 'Male Worker'
+            Button:
+                text: 'Female Worker'
+            Button:
+                text: 'Total Worker'
+            Button:
+                text: 'Cleaner'
+            Button:
+                text: 'Lodder'
+            Button:
+                text: 'Daily Labour (Out side)'
+            Button:
+                text: 'Project worker (Vendor)'
+            Button:
+                text: 'Visitor'
+
+        GridLayout:
+            cols:4
+            Button:
+                text: 'A-Shift'
+            Button:
+                text: 'G-Shift'
+            Button:
+                text: 'B-Shift'
+            Button:
+                text: 'Absent'
+            Button:
+                id: att_1
+            Button:
+                id: att_2
+            Button:
+                id: att_3
+            Button:
+                id: att_4
+            Button:
+                id: att_5
+            Button:
+                id: att_6
+            Button:
+                id: att_7
+            Button:
+                id: att_8
+            Button:
+                id: att_9
+            Button:
+                id: att_10
+            Button:
+                id: att_11
+            Button:
+                id: att_12
+            Button:
+                id: att_13
+            Button:
+                id: att_14
+            Button:
+                id: att_15
+            Button:
+                id: att_16
+            Button:
+                id: att_17
+            Button:
+                id: att_18
+            Button:
+                id: att_19
+            Button:
+                id: att_20
+            Button:
+                id: att_21
+            Button:
+                id: att_22
+            Button:
+                id: att_23
+            Button:
+                id: att_24
+            Button:
+                id: att_25
+            Button:
+                id: att_26
+            Button:
+                id: att_27
+            Button:
+                id: att_28
+            Button:
+                id: att_29
+            Button:
+                id: att_30
+            Button:
+                id: att_31
+            Button:
+                id: att_32
+            Button:
+                id: att_33
+            Button:
+                id: att_34
+            Button:
+                id: att_35
+            Button:
+                id: att_36
+
+<InputVisitor>:
+    cols: 1
+    Label:
+        text: 'Enter Visitor Info'
+        size_hint_y: 0.2
+
+    Button:
+        text: 'Add Visitor'
+        size_hint_y: 0.2
+        on_press: root.add_list()
+    GridLayout:
+        cols: 4
+        size_hint_y: 0.1
+        Label:
+            text: 'Name'
+        Label:
+            text: 'Designition'
+        Label:
+            text: 'Address'
+        Label:
+            text: 'Photo'
