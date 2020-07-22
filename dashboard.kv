@@ -13,6 +13,258 @@
 # <Button>:
 #     color: 1,1,1,1
 #     background_color: 0,0,0,1
+<InfoPage>:
+    cols: 1
+    GridLayout:#upper
+        cols: 4
+        GridLayout:#box1
+            cols: 1
+            padding: (2,2)
+            Button:
+                text: 'Factory Incident Status'
+                size_hint_y: 0.1
+
+            GridLayout:#form
+                cols: 2
+                Button:
+                    text: 'Insident Free Day:'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_0
+                Button:
+                    text: 'Last Insident Day:'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_1
+                Label:
+                    text: ''
+                    size_hint_y: 4
+
+        GridLayout:#box2
+            cols: 1
+            padding: (2,2)
+            Button:
+                text: 'Daily Wether'
+                size_hint_y: 0.1
+            GridLayout:#form2
+                cols: 2
+                Button:
+                    text: 'Date'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_2
+                Button:
+                    text: 'Temperature'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_3
+                Button:
+                    text: 'Humidity'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_4
+                Button:
+                    text: 'Day'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_5
+                Label:
+                    text: ''
+                    size_hint_y: 2
+
+
+        GridLayout:#Box3
+            cols: 1
+            padding: (2,2)
+            Button:
+                text: 'Month Summary'
+                size_hint_y: 0.1
+            GridLayout:#form3
+                cols: 2
+                Button:
+                    text: 'Highest Temperature'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_6
+                Button:
+                    text: 'Lowest Temperature'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_7
+                Button:
+                    text: 'No. of Sunny Days'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_8
+                Button:
+                    text: 'No. of Cloudy Days'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_9
+                Button:
+                    text: 'No. of Rainy Days'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_10
+                Button:
+                    text: 'No. of Stromy Days'
+                    text_size: (self.width*0.9, None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_11
+        GridLayout:#box4
+            cols: 1
+            padding: (2,2)
+            Button:
+                text: ''
+                size_hint_y: 0.1
+            GridLayout:#form4
+                cols: 5
+                Button:
+                    text: ''
+                Button:
+                    text: 'DOE Std.'
+                Button:
+                    text: 'Date'
+                Button:
+                    text: 'Result'
+                Button:
+                    text: 'Unit'
+                Button:
+                    text: 'pH'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_12
+                Button:
+                    text: ''
+                    id: id_13
+                Button:
+                    text: ''
+                    id: id_14
+                Button:
+                    text: ''
+                    id: id_15
+                Button:
+                    text: 'BOD'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_16
+                Button:
+                    text: ''
+                    id: id_17
+                Button:
+                    text: ''
+                    id: id_18
+                Button:
+                    text: ''
+                    id: id_19
+                Button:
+                    text: 'COD'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_20
+                Button:
+                    text: ''
+                    id: id_21
+                Button:
+                    text: ''
+                    id: id_22
+                Button:
+                    text: ''
+                    id: id_23
+                Button:
+                    text: 'DO'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_24
+                Button:
+                    text: ''
+                    id: id_25
+                Button:
+                    text: ''
+                    id: id_26
+                Button:
+                    text: ''
+                    id: id_27
+                Button:
+                    text: 'TSS'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_28
+                Button:
+                    text: ''
+                    id: id_29
+                Button:
+                    text: ''
+                    id: id_30
+                Button:
+                    text: ''
+                    id: id_31
+                Button:
+                    text: 'TDS'
+                    text_size: (self.width*0.9,None)
+                    halign: 'left'
+                Button:
+                    text: ''
+                    id: id_32
+                Button:
+                    text: ''
+                    id: id_33
+                Button:
+                    text: ''
+                    id: id_34
+                Button:
+                    text: ''
+                    id: id_35
+    Button:
+        text: ''
+        size_hint_y: 0.1
+    Image:
+        sourse: ''
+        allow_stretch: True
+        id: plot
+
+
+
+
+
+
+
+
+
 
 <InputPage2>:
     cols: 1
@@ -28,22 +280,40 @@
                 text: ''
             Label:
                 text: 'Staff'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Male Worker'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Female Worker'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Total Worker'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Cleaner'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Lodder'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Daily Labour (Out side)'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Project worker (Vendor)'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Label:
                 text: 'Visitor'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
 
         GridLayout:
             cols:4
@@ -79,13 +349,13 @@
                 id: att_11
             TextInput:
                 id: att_12
-            TextInput:
+            Label:
                 id: att_13
-            TextInput:
+            Label:
                 id: att_14
-            TextInput:
+            Label:
                 id: att_15
-            TextInput:
+            Label:
                 id: att_16
             TextInput:
                 id: att_17
@@ -155,22 +425,40 @@
                 text: ''
             Button:
                 text: 'Staff'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Male Worker'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Female Worker'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Total Worker'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Cleaner'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Lodder'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Daily Labour (Out side)'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Project worker (Vendor)'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
             Button:
                 text: 'Visitor'
+                text_size: (self.width*0.9, None)
+                halign: 'left'
 
         GridLayout:
             cols:4
@@ -260,7 +548,14 @@
     Label:
         text: 'Enter Visitor Info'
         size_hint_y: 0.2
-
+    GridLayout:
+        cols: 2
+        size_hint_y: 0.1
+        Label:
+            text: 'Show Guests for (Hours):'
+        TextInput:
+            id: show_visitor
+            text: '1'
     Button:
         text: 'Add Visitor'
         size_hint_y: 0.2
